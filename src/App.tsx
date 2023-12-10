@@ -1,9 +1,13 @@
 import "./App.css";
 // import ListGroup from "./components/ListGroup";
 // import ListGroupWithProps from "./components/ListGroupWithProps";
-import Alert from "./components/Alert";
+// import Alert from "./components/Alert";
+import Button from "./components/Button";
 function App() {
   // let allCountry = ["Indonesia", "Japan", "United States", "Russia"];
+  function handleSubmit() {
+    console.log("submit");
+  }
 
   return (
     <div>
@@ -15,9 +19,12 @@ function App() {
           console.log(item);
         }}
       /> */}
-      <Alert>
+      {/* <Alert>
         Hello <span>World</span>
-      </Alert>
+      </Alert> */}
+      <Button color="secondary" handler={handleSubmit}>
+        Click Me
+      </Button>
     </div>
   );
 }
